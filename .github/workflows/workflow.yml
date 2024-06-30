@@ -54,8 +54,7 @@ jobs:
     needs: User_Integration_Tests
     steps:
       - name: Deploy to production
-        uses: johnbeynon/render-deploy-action@v0.0.8
+        uses: sws2apps/render-deployment@main
         with:
           service-id: ${{ secrets.SERVICE_ID }}
-          api-key: ${{ secrets.SERVICE_API_KEY }}
-          wait-for-success: true
+          api-key: ${{ secrets.API_KEY }}
