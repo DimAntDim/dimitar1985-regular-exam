@@ -44,8 +44,8 @@ jobs:
       run: npx playwright install
     - name: Run Localhost Server
       run: npm run start &
-    - name: Run Tests
-      run: npm test:ui
+    - name: Run UI Tests
+      run: npm run test:ui
     - run: npm ci
     - run: npm run build --if-present
 
